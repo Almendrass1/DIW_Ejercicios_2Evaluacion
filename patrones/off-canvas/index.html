@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="btnMenu" class="btn-hamburguesa">☰</button>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="container">
+        <section id="sidePanel" class="columna1">
+            <button id="btnClose" class="btn-close">✕</button>
+            <h2 style="padding: 20px;">Menú</h2>
+            <nav>
+                <ul style="list-style: none; padding: 20px;">
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="mainPanel" class="columna2">
+            <div style="padding: 20px;">
+                <h1>Sección Principal</h1>
+                <p>En móvil, usa la hamburguesa o desliza el dedo a la derecha.</p>
+                <p>En escritorio, el menú está fijo a la izquierda.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+    <script>
+        (function () {
+            var mainPanel = document.getElementById("mainPanel");
+            var sidePanel = document.getElementById("sidePanel");
+            var btnMenu = document.getElementById("btnMenu");
+            var btnClose = document.getElementById("btnClose");
+            var overlay = document.getElementById("overlay");
+
+            function openMenu() {
+                sidePanel.classList.add("open");
+                overlay.classList.add("active");
+            }
+
+            function closeMenu() {
+                sidePanel.classList.remove("open");
+                overlay.classList.remove("active");
+            }
+
+            // Acción al hacer CLIC en la hamburguesa
+            btnMenu.addEventListener("click", function () {
+                if (sidePanel.classList.contains("open")) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            // Acción al hacer CLIC en el botón de cerrar
+            btnClose.addEventListener("click", function () {
+                closeMenu();
+            });
+
+            // Cerrar al hacer clic en el overlay (fuera del menú)
+            overlay.addEventListener("click", function () {
+                closeMenu();
+            });
+
+            // Acción con GESTOS (Hammer.js)
+            var hammerPanel = new Hammer(mainPanel);
+            hammerPanel.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+            hammerPanel.on("swiperight", function (e) {
+                openMenu();
+            });
+
+            hammerPanel.on("swipeleft", function (e) {
+                closeMenu();
+            });
+        })();
+    </script>
+</body>
+
+</html>
