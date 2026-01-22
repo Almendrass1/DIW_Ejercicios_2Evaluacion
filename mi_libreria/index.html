@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardín de los Libros - Inicio</title>
+    <meta name="description"
+        content="Bienvenido a El Jardín de los Libros, tu librería de confianza con una amplia selección de libros y merchandising.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-top">
+            <h1 class="site-title">El Jardín de los Libros</h1>
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="Logo El Jardín de los Libros" id="logoImg">
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search ...">
+                <button class="search-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2" />
+                        <path d="M11 11L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">La librería</a>
+                <a href="tienda.html" class="nav-link">Comprar Online</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <h2 class="hero-title">Bienvenido/a a el Jardín de los Libros</h2>
+            <p class="hero-text">
+                Descubre un mundo donde cada página es un nuevo viaje y cada libro cuenta una historia única.<br>
+                Explora nuestra colección cuidadosamente seleccionada y encuentra tu próxima gran lectura.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured-section">
+        <div class="section-header">
+            <h3 class="section-title">Libros y artículos destacados</h3>
+            <a href="tienda.html" class="scroll-arrow scroll-right" id="scrollRight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="books-carousel-container">
+            <div class="books-carousel" id="booksCarousel">
+                <!-- Product 1: Orgullo y Prejuicio -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/book3.jpg" alt="Orgullo y Prejuicio">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Libro: Orgullo y Prejuicio</h4>
+                        <button class="book-price">10,49€</button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Marca Pagina -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/marcapagina1.png" alt="Marca Pagina">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Otros: Marca Pagina</h4>
+                        <button class="book-price">8,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Perfecto Mentirosos -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/book3.webp" alt="Perfecto Mentirosos">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Libro: Perfecto Mentirosos</h4>
+                        <button class="book-price">13,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Alas de Sangre -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/book4.jpg" alt="Alas de Sangre">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Libro: Alas de Sangre</h4>
+                        <button class="book-price">12,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Sentido y Sensibilidad -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/book1.jpg" alt="Sentido y Sensibilidad">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Libro: Sentido y Sensibilidad</h4>
+                        <button class="book-price">10,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 6: Bolsa de Tela -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/bolsaTela1.png" alt="Bolsa de Tela">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Bolsa de Tela</h4>
+                        <button class="book-price">9,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 7: Tazas La Bella y La Bestia -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/tazas.jpg" alt="Tazas La Bella y La Bestia">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Tazas: La Bella y La Bestia</h4>
+                        <button class="book-price">25,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 8: Bolsa de Tela Bridgerton -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/bolsaTela.jpg" alt="Bolsa de Tela Bridgerton">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Bolsa de Tela Bridgerton</h4>
+                        <button class="book-price">9,99€</button>
+                    </div>
+                </div>
+
+                <!-- Product 9: Alas de Ónix -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/libro5.webp" alt="Alas de Ónix">
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Libro: Alas de Ónix</h4>
+                        <button class="book-price">23,99€</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- localización Section -->
+    <section class="store-locator-section">
+        <div class="locator-container">
+            <div class="locator-left">
+                <h3 class="locator-title">Encuentranos cerca de ti</h3>
+                <ul class="store-list">
+                    <li class="store-item">
+                        <input type="checkbox" id="store1" class="store-checkbox">
+                        <label for="store1">Librería A</label>
+                    </li>
+                    <li class="store-item">
+                        <input type="checkbox" id="store2" class="store-checkbox">
+                        <label for="store2">Librería B</label>
+                    </li>
+                    <li class="store-item">
+                        <input type="checkbox" id="store3" class="store-checkbox">
+                        <label for="store3">Librería C</label>
+                    </li>
+                </ul>
+                <button class="view-map-button">VER MAPA</button>
+            </div>
+
+            <div class="locator-right">
+                <h3 class="map-title">Mapa</h3>
+                <div class="map-container" id="mapContainer">
+                    <div class="map-marker marker-1" style="top: 30%; left: 40%;">
+                        <svg width="30" height="40" viewBox="0 0 30 40">
+                            <path
+                                d="M15 0C6.716 0 0 6.716 0 15c0 8.284 15 25 15 25s15-16.716 15-25c0-8.284-6.716-15-15-15z"
+                                fill="#d9534f" />
+                            <circle cx="15" cy="15" r="5" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="map-marker marker-2" style="top: 65%; left: 55%;">
+                        <svg width="30" height="40" viewBox="0 0 30 40">
+                            <path
+                                d="M15 0C6.716 0 0 6.716 0 15c0 8.284 15 25 15 25s15-16.716 15-25c0-8.284-6.716-15-15-15z"
+                                fill="#d9534f" />
+                            <circle cx="15" cy="15" r="5" fill="white" />
+                        </svg>
+                    </div>
+                    <svg class="route-line" width="100%" height="100%">
+                        <path d="M 40% 30% Q 50% 45% 55% 65%" stroke="#5b9bd5" stroke-width="2" stroke-dasharray="5,5"
+                            fill="none" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="#e8e4d9" stroke-width="2" />
+                        <circle cx="18" cy="6" r="1.5" fill="#e8e4d9" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Política de datos</a>
+                <a href="#" class="footer-link">Cookies</a>
+            </div>
+            <p class="copyright">© Copyright 2026 - Mariana A.F.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

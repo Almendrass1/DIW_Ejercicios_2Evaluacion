@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardín de los Libros - Tienda Online</title>
+    <meta name="description"
+        content="Compra libros online en El Jardín de los Libros. Amplia selección de géneros literarios.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-top">
+            <h1 class="site-title">El Jardín de los Libros</h1>
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="Logo El Jardín de los Libros" id="logoImgTienda">
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search ...">
+                <button class="search-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2" />
+                        <path d="M11 11L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">La librería</a>
+                <a href="tienda.html" class="nav-link active">Comprar Online</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <main class="shop-container">
+        <!-- Sidebar Categories (25%) -->
+        <aside class="categories-sidebar">
+            <h3 class="sidebar-title">Categorías</h3>
+            <ul class="categories-list">
+                <li class="category-item">
+                    <input type="checkbox" id="cat-todos" class="category-checkbox" checked>
+                    <label for="cat-todos">Todos los productos</label>
+                </li>
+                <li class="category-item">
+                    <input type="checkbox" id="cat-libros" class="category-checkbox">
+                    <label for="cat-libros">Libros</label>
+                </li>
+                <li class="category-item">
+                    <input type="checkbox" id="cat-tazas" class="category-checkbox">
+                    <label for="cat-tazas">Tazas</label>
+                </li>
+                <li class="category-item">
+                    <input type="checkbox" id="cat-bolsas" class="category-checkbox">
+                    <label for="cat-bolsas">Bolsas</label>
+                </li>
+                <li class="category-item">
+                    <input type="checkbox" id="cat-otros" class="category-checkbox">
+                    <label for="cat-otros">Otros</label>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Products Grid (75%) -->
+        <section class="products-section">
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card has-sale" data-category="libros novela">
+                    <div class="product-badge sale">%</div>
+                    <h4 class="product-name">Libro: Orgullo y Prejuicio</h4>
+                    <div class="product-image-container">
+                        <img src="images/book3.jpg" alt="Orgullo y Prejuicio" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        La historia clásica de amor y orgullo de Jane Austen. Una novela atemporal sobre las relaciones
+                        sociales.
+                    </p>
+                    <p class="product-price">10,49€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card" data-category="otros">
+                    <h4 class="product-name">Otros: Marca Pagina </h4>
+                    <div class="product-image-container">
+                        <img src="images/marcapagina1.png" alt="Marca Pagina" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Novela romántica llena de emociones y giros inesperados que te mantendrán enganchado.
+                    </p>
+                    <p class="product-price">8,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card has-sale" data-category="libros">
+                    <div class="product-badge sale">%</div>
+                    <h4 class="product-name">Libro: Perfecto Mentirosos</h4>
+                    <div class="product-image-container">
+                        <img src="images/book3.webp" alt="Perfecto Mentirosos" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        La historia de un matrimonio perfecto que esconde secretos oscuros y sorpresas.
+                    </p>
+                    <p class="product-price">13,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card" data-category="libros">
+                    <h4 class="product-name">Libro: Alas de Sangre</h4>
+                    <div class="product-image-container">
+                        <img src="images/book4.jpg" alt="Alas de Sangre" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Un thriller gótico lleno de misterio, sangre y alas oscuras que te atrapará desde el inicio.
+                    </p>
+                    <p class="product-price">12,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 5 -->
+                <article class="product-card" data-category="libros">
+                    <h4 class="product-name">Libro: Sentido y Sensibilidad</h4>
+                    <div class="product-image-container">
+                        <img src="images/book1.jpg" alt="Sentido y Sensibilidad" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Otra obra maestra de Jane Austen sobre el amor, la razón y las emociones.
+                    </p>
+                    <p class="product-price">10,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 6 -->
+                <article class="product-card has-new" data-category="bolsas">
+                    <div class="product-badge new">NEW</div>
+                    <h4 class="product-name">Bolsa de Tela</h4>
+                    <div class="product-image-container">
+                        <img src="images/bolsaTela1.png" alt="Bolsa de Tela" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Historia sobre el arte de la costura y las tradiciones familiares transmitidas de generación.
+                    </p>
+                    <p class="product-price">9,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 7 -->
+                <article class="product-card has-limited" data-category="tazas">
+                    <div class="product-badge limited">LIMITED<br>EDITION</div>
+                    <h4 class="product-name">Tazas: La Bella y La Bestia</h4>
+                    <div class="product-image-container">
+                        <img src="images/tazas.jpg" alt="La Tela de la Vida" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Descubre los secretos de la costura artesanal y cómo cada puntada cuenta una historia única.
+                    </p>
+                    <p class="product-price">25,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 8 -->
+                <article class="product-card" data-category="bolsas">
+                    <h4 class="product-name">Bolsa de Tela Bridgerton</h4>
+                    <div class="product-image-container">
+                        <img src="images/bolsaTela.jpg" alt="Bolsa de Tela Bridgerton" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Viaja al pasado con esta novela nostálgica sobre una mujer que busca su destino.
+                    </p>
+                    <p class="product-price">9,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+
+                <!-- Product Card 9 -->
+                <article class="product-card" data-category="libros">
+                    <h4 class="product-name">Libro: Alas de Ónix</h4>
+                    <div class="product-image-container">
+                        <img src="images/libro5.webp" alt="Alas de Ónix" class="product-image">
+                    </div>
+                    <p class="product-description">
+                        Una novela de fantasía oscura llena de magia, misterio y personajes inolvidables.
+                    </p>
+                    <p class="product-price">23,99€</p>
+                    <button class="buy-button">Comprar</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="#e8e4d9" stroke-width="2" />
+                        <circle cx="18" cy="6" r="1.5" fill="#e8e4d9" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Política de datos</a>
+                <a href="#" class="footer-link">Cookies</a>
+            </div>
+            <p class="copyright">© Copyright 2026 - Mariana A.F.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
