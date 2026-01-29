@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. Colores y Personalización</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>COLORES Y PERSONALIZACIÓN</h1>
+    <hr>
+    <h1 class="bg-red-900 text-white">Bienvenido a Tailwind</h1>
+    <h1 class="bg-red-900 text-white">Bienvenido a Tailwind</h1>
+    <h1 class="bg-black/90 text-pink-900/20">Título con transparencias</h1>
+    <!-- agrupacion de estilos -->
+    <div class="text-green-500 bg-black">
+        <p>Este texto hereda el color verde</p>
+        <p>Este también</p>
+    </div>
+    <!-- herencia -->
+    <div class="[&>*]:bg-blue-500 [&>*]:p-4">
+        <p>Soy azul con padding</p>
+        <p>Yo también</p>
+    </div>
+    <!-- valores personalizados -->
+    <h1 class="bg-[#2E86AB] text-white">Título con color personalizado directo</h1>
+
+    <!-- ICONOS SVG -->
+    <!-- Icono de Facebook con color personalizado -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12 fill-[#1877f2]">
+        <!-- Path del SVG -->
+        <path
+            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+        </path>
+    </svg>
+</body>
+
+</html>
