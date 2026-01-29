@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="text-center w-1/2 bg-amber-300">
+        <h1 class="text-5xl">Mitad de ancho</h1>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="w-1/2 bg-amber-300">
+        <!-- La imagen ocupará el 100% del ancho de SU PADRE (el 50% de la pantalla) -->
+        <img src="./assets/landscape.png" class="w-full" alt="Paisaje">
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="text-center w-md h-4/5 bg-amber-300">
+        <!-- Ahora sí ocupará el 80% de la altura de la pantalla (que hereda del body) -->
+        ... contenido ...
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="bg-blue-500 p-10">
+        <p class="bg-white">Contenido con padding de 40px alrededor</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="w-1/2 mx-auto bg-amber-300">
+        <p>div centrado horizontalmente</p>
+        <!-- Este div estará centrado horizontalmente -->
+    </div> 
+    <hr>
+    <br>
+    <div class="-mb-6">
+        <p>div con margin bottom negativo de -24px</p>
+        <!-- Margen bottom negativo de -24px -->
+    </div>
+    <br>
+    <hr>
+    <br>
+    <nav class="border-x-10 border-amber-400">
+        <!-- Borde horizontal de 40px color ámbar -->
+        <p>Borde horizontal de 40px color ámbar</p>
+    </nav>
+    <hr>
+    <br>
+    <br>
+    <div class="border-4 border-blue-500 border-dashed">
+        <p>Borde azul discontinuo</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <nav class="space-y-4">
+        <a href="#" class="bg-slate-800 px-8 py-4 block">Inicio</a>
+        <a href="#" class="bg-slate-800 px-8 py-4 block">Acerca de</a>
+        <a href="#" class="bg-slate-800 px-8 py-4 block">Contacto</a>
+    </nav>
+    <hr>
+    <br>
+    <br>
+    <nav class="flex divide-x-10 divide-lime-500 divide-dotted">
+        <a href="#" class="px-8 py-4">Inicio</a>
+        <a href="#" class="px-8 py-4">Acerca de</a>
+        <a href="#" class="px-8 py-4">Contacto</a>
+    </nav>
+    <hr>
+    <br>
+    <br>
+    <!-- Correcto -->
+    <a href="#" class="px-8 py-4 inline-block">Enlace</a>
+    <hr>
+    <!-- o -->
+    <a href="#" class="px-8 py-4 block">Enlace</a>
+    <hr>
+    <div class="w-md mx-auto my-20 border-2 border-gray-500/50 py-7 px-5 rounded-2xl space-y-8">
+    <img src="./assets/mountain_landscape.png" class="w-full h-60 object-cover rounded-md" alt="">
+    <h3 class="text-3xl font-bold my-6">¡Título Card!</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga temporibus consectetur libero impedit a
+        provident sed exercitationem, praesentium quam ea accusamus voluptatem unde? Est rem quod dignissimos sint
+        tempora.
+    </p>
+    <a href="#" class="block bg-blue-600 text-white text-center py-4 rounded-full">Leer más</a>
+    </div>
+    <hr>
+</body>
+</html>

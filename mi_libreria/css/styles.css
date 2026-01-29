@@ -782,16 +782,16 @@ body {
     El menú se mantiene en horizontal. */
     .header-bottom {
         flex-wrap: wrap;
-    }
+    } 
 
     .search-container {
-        flex:100%;
+        flex:100%;   /* ocupa todo el ancho */
         order: 3;
         justify-content: center;
     }
 
     .main-nav {
-        margin-left: 0;
+        margin-left: auto;
         order: 2;
     }
 
@@ -824,7 +824,7 @@ body {
 @media(max-width: 600px){
     /* menu hamburguesa */
     .menu-toggle {
-        display: flex !important;
+        display: flex;
         z-index: 1001;
     }
 
@@ -838,7 +838,7 @@ body {
         flex-direction: column;
         gap: 0;
         padding-left: 30px;
-        max-height: 0;
+        max-height: 0; /* oculta el menu */
         overflow: hidden;
         transition: max-height 0.3s ease;
         margin-left: 0;
@@ -929,7 +929,6 @@ body {
         overflow: hidden;
         transition: max-height 0.3s ease;
         margin-left: 0;
-        order: 0;
     }
 
     .main-nav.active {
